@@ -58,6 +58,7 @@ public class GeneralUtilities {
         return getAllPermutations(new ArrayList<>(set));
     }
 
+    // TODO: implement this method
     public static String previousLexicographicPermutation(String str) {
         return str;
     }
@@ -105,10 +106,12 @@ public class GeneralUtilities {
         return new String(carray);
     }
 
+    /*
+        It will be interesting to read Item-31 of Effective Java
+        3rd ed.
+     */
     public static <T> void swap(List<T> list, int a, int b) {
-        T temp = list.get(a);
-        list.set(a, list.get(b));
-        list.set(b, temp);
+        list.set(a, list.set(b, list.get(a)));
     }
 
     public static <T> void swap(T[] arr, int a, int b) {
