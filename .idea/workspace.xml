@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52a30c35-da20-4a96-aabb-14fe3f9f8907" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SetOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SetOperationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MultiSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MultiSetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GeneralUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GeneralUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MathUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MathUtilities.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,17 +23,24 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GeneralUtilities.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MultiSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+            <state relative-caret-position="174">
+              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
-                <element signature="e#1727#1728#0" expanded="true" />
-                <element signature="e#1777#1778#0" expanded="true" />
-                <element signature="e#4495#4496#0" expanded="true" />
-                <element signature="e#4547#4548#0" expanded="true" />
-                <element signature="e#4612#4613#0" expanded="true" />
-                <element signature="e#4672#4673#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#420#421#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1050#1051#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
+                <element signature="e#1955#1956#0" expanded="true" />
+                <element signature="e#2005#2006#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,6 +61,8 @@
       <find>[]</find>
       <find>object</find>
       <find>comparable</find>
+      <find>mult</find>
+      <find>hashmap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -65,14 +75,17 @@
         <option value="$PROJECT_DIR$/src/main/java/SegmentTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/InputUtilities.java" />
         <option value="$PROJECT_DIR$/src/test/java/MathUtilitiesTEst.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MathUtilities.java" />
         <option value="$PROJECT_DIR$/src/test/java/MathUtilitiesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/OutputUtilities.java" />
         <option value="$PROJECT_DIR$/src/test/java/GeneralUtilitiesTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/SetOperationsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/SetOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/GeneralUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MathUtilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Pair.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/MultiSetTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MultiSet.java" />
       </list>
     </option>
   </component>
@@ -95,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,6 +151,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,31 +173,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SetOperationsTest">
-    <configuration name="GeneralUtilitiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MultiSetTest">
+    <configuration name="MultiSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="competitive_coding_utilities" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GeneralUtilitiesTest" />
+      <option name="MAIN_CLASS_NAME" value="MultiSetTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GeneralUtilitiesTest.nextLexicographicPermutationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiSetTest.containsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="competitive_coding_utilities" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GeneralUtilitiesTest" />
-      <option name="METHOD_NAME" value="nextLexicographicPermutationTest" />
+      <option name="MAIN_CLASS_NAME" value="MultiSetTest" />
+      <option name="METHOD_NAME" value="containsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MathUtilitiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MultiSetTest.retainAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="competitive_coding_utilities" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathUtilitiesTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="MultiSetTest" />
+      <option name="METHOD_NAME" value="retainAllTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MultiSetTest" />
+        <item itemvalue="JUnit.MultiSetTest.retainAllTest" />
+        <item itemvalue="JUnit.MultiSetTest.containsTest" />
         <item itemvalue="JUnit.SetOperationsTest" />
         <item itemvalue="JUnit.SetOperationsTest.testBasic" />
-        <item itemvalue="JUnit.GeneralUtilitiesTest.nextLexicographicPermutationTest" />
-        <item itemvalue="JUnit.GeneralUtilitiesTest" />
-        <item itemvalue="JUnit.MathUtilitiesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -232,42 +246,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GeneralUtilitiesTest_nextLexicographicPermutationTest - 2019.03.19 at 23h 12m 05s.xml">
-      <configuration name="GeneralUtilitiesTest.nextLexicographicPermutationTest" configurationId="JUnit" />
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 16m 49s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeneralUtilitiesTest_nextLexicographicPermutationTest - 2019.03.19 at 23h 24m 36s.xml">
-      <configuration name="GeneralUtilitiesTest.nextLexicographicPermutationTest" configurationId="JUnit" />
+    <history-entry file="MultiSetTest_retainAllTest - 2019.04.21 at 18h 21m 03s.xml">
+      <configuration name="MultiSetTest.retainAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeneralUtilitiesTest_nextLexicographicPermutationTest - 2019.03.19 at 23h 26m 20s.xml">
-      <configuration name="GeneralUtilitiesTest.nextLexicographicPermutationTest" configurationId="JUnit" />
+    <history-entry file="MultiSetTest_retainAllTest - 2019.04.21 at 18h 22m 37s.xml">
+      <configuration name="MultiSetTest.retainAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GeneralUtilitiesTest_nextLexicographicPermutationTest - 2019.03.19 at 23h 26m 36s.xml">
-      <configuration name="GeneralUtilitiesTest.nextLexicographicPermutationTest" configurationId="JUnit" />
+    <history-entry file="MultiSetTest_retainAllTest - 2019.04.21 at 18h 22m 43s.xml">
+      <configuration name="MultiSetTest.retainAllTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetOperationsTest_testBasic - 2019.04.02 at 10h 15m 28s.xml">
-      <configuration name="SetOperationsTest.testBasic" configurationId="JUnit" />
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 22m 50s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetOperationsTest_testBasic - 2019.04.02 at 10h 16m 13s.xml">
-      <configuration name="SetOperationsTest.testBasic" configurationId="JUnit" />
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 28m 45s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetOperationsTest_testBasic - 2019.04.02 at 10h 17m 57s.xml">
-      <configuration name="SetOperationsTest.testBasic" configurationId="JUnit" />
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 33m 32s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetOperationsTest_testBasic - 2019.04.02 at 10h 20m 03s.xml">
-      <configuration name="SetOperationsTest.testBasic" configurationId="JUnit" />
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 34m 27s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetOperationsTest - 2019.04.02 at 10h 20m 22s.xml">
-      <configuration name="SetOperationsTest" configurationId="JUnit" />
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 35m 35s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SetOperationsTest - 2019.04.02 at 10h 22m 00s.xml">
-      <configuration name="SetOperationsTest" configurationId="JUnit" />
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 37m 44s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28177083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -275,9 +289,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.33694476" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33694476" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4760936" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3996063" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39877924" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -334,6 +348,24 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MultiSetTest.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MultiSetTest.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MultiSet.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -346,20 +378,6 @@
             <element signature="e#4533#4534#0" expanded="true" />
             <element signature="e#4590#4591#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/BiFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -408,30 +426,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/OutputUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/InputUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,35 +475,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="502" column="33" lean-forward="true" selection-start-line="502" selection-start-column="33" selection-end-line="502" selection-end-column="33" />
-          <folding>
-            <element signature="e#16106#16107#0" expanded="true" />
-            <element signature="e#16151#16152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="549" column="23" selection-start-line="549" selection-start-column="17" selection-end-line="549" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/concurrent/DelayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="289" column="13" selection-start-line="289" selection-start-column="13" selection-end-line="289" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -534,17 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
-          <folding>
-            <element signature="e#2837#2838#0" expanded="true" />
-            <element signature="e#2866#2867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/UnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -566,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MathUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2117">
-          <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/Set.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -581,13 +536,6 @@
             <element signature="e#22087#22088#0" expanded="true" />
             <element signature="e#22157#22158#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -622,13 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="571" column="6" selection-start-line="571" selection-start-column="6" selection-end-line="571" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SetOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -639,17 +580,214 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MathUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GeneralUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="19" column="63" lean-forward="true" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+        <state relative-caret-position="957">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="e#1727#1728#0" expanded="true" />
             <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#4495#4496#0" expanded="true" />
-            <element signature="e#4547#4548#0" expanded="true" />
-            <element signature="e#4612#4613#0" expanded="true" />
-            <element signature="e#4672#4673#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/InputUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="196" column="13" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="530" column="40" selection-start-line="530" selection-start-column="40" selection-end-line="530" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2106">
+          <caret line="96" column="30" selection-start-line="96" selection-start-column="30" selection-end-line="96" selection-end-column="30" />
+          <folding>
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2866#2867#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/BiFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="1933" column="50" lean-forward="true" selection-start-line="1933" selection-start-column="50" selection-end-line="1933" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="270" column="6" selection-start-line="270" selection-start-column="6" selection-end-line="270" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="628" column="30" selection-start-line="628" selection-start-column="26" selection-end-line="628" selection-end-column="30" />
+          <folding>
+            <element signature="e#23523#23524#0" expanded="true" />
+            <element signature="e#23577#23578#0" expanded="true" />
+            <element signature="e#24218#24219#0" expanded="true" />
+            <element signature="e#24283#24284#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="497" column="10" lean-forward="true" selection-start-line="497" selection-start-column="10" selection-end-line="497" selection-end-column="10" />
+          <folding>
+            <element signature="e#10596#10597#0" expanded="true" />
+            <element signature="e#10623#10624#0" expanded="true" />
+            <element signature="e#16106#16107#0" expanded="true" />
+            <element signature="e#16151#16152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="1047" column="51" selection-start-line="1047" selection-start-column="42" selection-end-line="1047" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="572" column="7" lean-forward="true" selection-start-line="572" selection-start-column="7" selection-end-line="572" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.1-jre/guava-27.1-jre.jar!/com/google/common/collect/Multiset.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="71" column="25" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.1-jre/guava-27.1-jre-sources.jar!/com/google/common/collect/AbstractMultiset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.1-jre/guava-27.1-jre-sources.jar!/com/google/common/collect/ForwardingMultiset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="200" column="4" lean-forward="true" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.1-jre/guava-27.1-jre-sources.jar!/com/google/common/collect/Multiset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="446" column="23" lean-forward="true" selection-start-line="446" selection-start-column="23" selection-end-line="446" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/27.1-jre/guava-27.1-jre-sources.jar!/com/google/common/collect/Multisets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="717" column="35" lean-forward="true" selection-start-line="717" selection-start-column="35" selection-end-line="717" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.1/lib/src.zip!/java.base/java/util/stream/IntStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="828" column="16" lean-forward="true" selection-start-line="828" selection-start-column="7" selection-end-line="828" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/SegmentTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MultiSetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2697">
+          <caret line="93" column="3" selection-start-line="93" selection-start-column="3" selection-end-line="94" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MultiSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#2005#2006#0" expanded="true" />
           </folding>
         </state>
       </provider>

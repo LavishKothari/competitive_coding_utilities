@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.BitSet;
+import java.util.List;
+import java.util.Optional;
 import java.util.stream.IntStream;
 
 public class MathUtilities {
@@ -12,7 +15,8 @@ public class MathUtilities {
     }
 
     public static long power(long a, long b) {
-        if (b == 0) return 1l;
+        if (a == 0) return 0l;
+        if (a == 1 || b == 0) return 1l;
         if (b == 1) return a;
         long t = power(a, b >> 1);
         if (b % 2 == 0) return t * t;
@@ -20,9 +24,10 @@ public class MathUtilities {
     }
 
     public static long power(long a, long b, long mod) {
-        if (b == 0) return 1l;
+        if (a == 0) return 0l;
+        if (a == 1 || b == 0) return 1l;
         if (b == 1) return a % mod;
-        long t = power(a, b >> 1);
+        long t = power(a, b >> 1, mod);
         if (b % 2 == 0) return (t * t) % mod;
         return ((t * t) % mod * a) % mod;
     }
