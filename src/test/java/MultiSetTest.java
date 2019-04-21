@@ -7,7 +7,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class MultiSetTest {
-    private static final int INITIAL_SIZE = 10;
+    // keep this INITIAL_SIZE an even integer less than 100
+    private static final int INITIAL_SIZE = 50;
     private MultiSet<Integer> mi;
 
     @Before
@@ -21,20 +22,20 @@ public class MultiSetTest {
 
     @Test
     public void sizeTest() {
-        Assert.assertEquals(20, mi.size());
+        Assert.assertEquals(2 * INITIAL_SIZE, mi.size());
         Assert.assertFalse(mi.isEmpty());
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < INITIAL_SIZE; i++) {
             mi.remove(i);
             mi.remove(i + 100);
         }
-        Assert.assertEquals(10, mi.size());
+        Assert.assertEquals(INITIAL_SIZE, mi.size());
         Assert.assertFalse(mi.isEmpty());
 
         for (int i = 100; i < 200; i++) {
             mi.remove(i);
         }
-        Assert.assertEquals(10, mi.size());
+        Assert.assertEquals(INITIAL_SIZE, mi.size());
         Assert.assertFalse(mi.isEmpty());
 
         mi.clear();
@@ -44,18 +45,18 @@ public class MultiSetTest {
 
     @Test
     public void containsTest() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < INITIAL_SIZE; i++) {
             Assert.assertTrue(mi.contains(i));
         }
     }
 
     @Test
     public void removeTest() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < INITIAL_SIZE; i++) {
             mi.remove(i);
             Assert.assertTrue(mi.contains(i));
         }
-        Assert.assertEquals(10, mi.size());
+        Assert.assertEquals(INITIAL_SIZE, mi.size());
     }
 
     @Test
@@ -97,7 +98,7 @@ public class MultiSetTest {
                 .boxed()
                 .collect(Collectors.toList());
         mi.removeAll(list);
-        Assert.assertEquals(15, mi.size());
+        Assert.assertEquals(3 * INITIAL_SIZE / 2, mi.size());
         Assert.assertTrue(IntStream.range(0, INITIAL_SIZE)
                 .filter(e -> e % 2 != 0)
                 .boxed()
@@ -113,7 +114,7 @@ public class MultiSetTest {
 
     @Test
     public void getUniqueElementsTest() {
-        Assert.assertEquals(10, mi.getUniqueElements().size());
+        Assert.assertEquals(INITIAL_SIZE, mi.getUniqueElements().size());
     }
 
 }

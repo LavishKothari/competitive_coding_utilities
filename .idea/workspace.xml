@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52a30c35-da20-4a96-aabb-14fe3f9f8907" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MultiSetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MultiSetTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,10 +18,13 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/MultiSetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="283">
+              <caret line="119" column="1" lean-forward="true" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,9 +66,9 @@
         <option value="$PROJECT_DIR$/src/main/java/GeneralUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/MathUtilities.java" />
         <option value="$PROJECT_DIR$/src/main/java/Pair.java" />
-        <option value="$PROJECT_DIR$/src/test/java/MultiSetTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/MultiSet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/MultiSetTest.java" />
       </list>
     </option>
   </component>
@@ -226,24 +229,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MultiSetTest - 2019.04.21 at 18h 16m 49s.xml">
-      <configuration name="MultiSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiSetTest_retainAllTest - 2019.04.21 at 18h 21m 03s.xml">
-      <configuration name="MultiSetTest.retainAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiSetTest_retainAllTest - 2019.04.21 at 18h 22m 37s.xml">
-      <configuration name="MultiSetTest.retainAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiSetTest_retainAllTest - 2019.04.21 at 18h 22m 43s.xml">
-      <configuration name="MultiSetTest.retainAllTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiSetTest - 2019.04.21 at 18h 22m 50s.xml">
-      <configuration name="MultiSetTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MultiSetTest - 2019.04.21 at 18h 28m 45s.xml">
-      <configuration name="MultiSetTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MultiSetTest - 2019.04.21 at 18h 33m 32s.xml">
       <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
@@ -256,12 +241,30 @@
     <history-entry file="MultiSetTest - 2019.04.21 at 18h 37m 44s.xml">
       <configuration name="MultiSetTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 52m 13s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 52m 36s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 53m 29s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 53m 37s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 53m 49s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiSetTest - 2019.04.21 at 18h 54m 21s.xml">
+      <configuration name="MultiSetTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28177083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28177083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -270,7 +273,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33694476" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4760936" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4760936" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39877924" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -330,13 +333,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/MultiSetTest.java</url>
-          <line>84</line>
+          <line>85</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/MultiSetTest.java</url>
-          <line>83</line>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -345,6 +348,12 @@
           <line>141</line>
           <properties />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MultiSetTest.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -733,16 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MultiSetTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2697">
-          <caret line="93" column="3" selection-start-line="93" selection-start-column="3" selection-end-line="94" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MultiSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -767,8 +766,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="577">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/MultiSetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="119" column="1" lean-forward="true" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
